@@ -1,0 +1,78 @@
+{
+  "id": "005544",
+  "consumer":{
+    "name": {
+      "firstName": "string",
+      "middleName": "string",
+      "lastName": "string",
+      "suffix": "string"
+    },
+    "identity":{
+      "ssn":"1233456",
+      "alternateSsn": "123456789",
+      "idType": "DriversLicense",
+      "driversLicenseNumber": "123456789",
+      "driversLicenseExpirationDate": "2021-03-30T10:01:13.587Z",
+      "stateIdNumber": "12345",
+      "stateIdExpirationDate": "2021-03-30T10:01:13.587Z",
+      "profilePhotoUrl": "abcabc"
+    },
+    "contact": {
+      "email": "shrini@test.com",
+      "primaryPhone": "1234567890",
+      "alternatePhone": "1234567890",
+      "notificationPreference": "SmsPrimary"
+    },
+    "identityVerification": {
+      "pin": "123",
+      "firstSecurityQuestionAnswer": {
+        "question": "Test",
+        "answer": "Test"
+      },
+      "secondSecurityQuestionAnswer": {
+        "question": "Test1",
+        "answer": "Test1"
+      },
+      "thirdSecurityQuestionAnswer": {
+        "question": "Test2",
+        "answer": "Test2"
+      },
+      "photoId1": "123",
+      "photoId2": "123"
+    },
+    "residenceStatus": {
+      "citizenshipStatus": "Citizen",
+      "registeredAlienNumber": "12345",
+      "registeredAlienNumberExpirationDate": "2021-03-30T10:01:13.587Z",
+      "workVisaNumber": "12345",
+      "workVisaExpirationDate": "2021-03-30T10:01:13.587Z",
+      "employmentStatus": "FullTime"
+    },
+    "mailingAddress": {
+      "addressCountry": "UnitedStates",
+      "address1": "abc",
+      "address2": "abc",
+      "state": "test",
+      "city": "test",
+      "postalcode": "12345",
+      "province": "test",
+      "county": "test"
+    },
+    "residenceAddress": {
+      "addressCountry": "UnitedStates",
+      "address1": "test",
+      "address2": "test",
+      "state": "test",
+      "city": "test",
+      "postalcode": "123456",
+      "province": "test",
+      "county": "test"
+    },
+    "demographic": {
+      "gender": "Female",
+      "ethnicity": "White",
+      "handicap": true,
+      "education": "AdvancedCollegeDegree"
+    }
+  }
+}
