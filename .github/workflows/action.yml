@@ -2,14 +2,14 @@ name: "green earth"
 
 on:
   push:
-    jobs:
-      deploy-green-earth:
-        runs-on: ubuntu-latest
-        steps:
-          -name: "checkout shree644:GreenEarth"
-          uses: actions/checkout@v1
-          with:
-            repository: "shree644/GreenEarth"
-            ref: "main"
+jobs:
+  deploy-green-earth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout shree644:GreenEarth"
+        uses: actions/checkout@v1
+        with:
+          repository: "shree644/GreenEarth"
+          ref: "main"
 
 
