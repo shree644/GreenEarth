@@ -11,6 +11,31 @@ jobs:
         with:
           repository: "shree644/GreenEarth"
           ref: "main"
+      - name:  "create .ntrc for heroku"
+        shell: bash
+        run: |
+          `cat ≶~/.netrc <<EOF
+          machine api.heroku.com
+            login k28135678@gmail.com
+            password 2ea47349-60af-4cbc-b98d-b2b0891575a5
+          machine git.heroku.com
+            login k28135678@gmail.com
+            password 2ea47349-60af-4cbc-b98d-b2b0891575a5
+          EOF`
+        env:
+          EMAIL : kulkarnishree64@gmail.com
+          HEROKU_AUTH_TOKEN: ${{secrets.HEROKU_AUTH_TOKEN}}
+        - name : "Add remote"
+            shell: "bash"
+            run : |
+              heroku git: remote --app GreenEarth
+        - name: "Add remote"
+            shell: "bash"
+            run: |
+              git push heroku HEAD:main
+
+
+
 
 
 
