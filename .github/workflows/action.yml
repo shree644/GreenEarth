@@ -29,11 +29,11 @@ jobs:
         shell: "bash"
         run : |
 
-          heroku git: remote --app greenearthredsun
+          heroku git: remote -a greenearthredsun
       - name: "Add remote"
         shell: "bash"
         run: |
-          git push heroku HEAD:main
+          git push heroku main
 
 
 
