@@ -28,7 +28,6 @@ jobs:
       - name : "Add remote"
         shell: "bash"
         run : |
-
           heroku git: remote -a greenearthredsun
       - name: "Add remote"
         shell: "bash"
