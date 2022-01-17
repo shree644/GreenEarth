@@ -11,11 +11,11 @@ jobs:
         with:
           repository: "shree644/GreenEarth"
           ref: "main"
-      - name:  "create .ntrc for heroku"
+      - name:  "create .netrc for heroku"
         shell: bash
         run: |
           `cat ≶~/.netrc <<EOF
-          machine api.heroku.com
+           machine api.heroku.com
             login k28135678@gmail.com
             password 2ea47349-60af-4cbc-b98d-b2b0891575a5
           machine git.heroku.com
