@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/docker-green-earth.jar
+web: java -Dserver.port=$PORT -jar target/GreenEarth-0.0.1-SNAPSHOT.jar
