@@ -28,11 +28,11 @@ jobs:
       - name : "Add remote"
         shell: "bash"
         run : |
-          heroku git: remote -a greenearthredsun
+          git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
       - name: "Add remote"
         shell: "bash"
         run: |
-          git push heroku main
+          git push heroku HEAD:main -f
 
 
 
