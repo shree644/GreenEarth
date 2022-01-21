@@ -25,14 +25,14 @@ public class PrivilegedConsumerController {
     @PostMapping("/privileged")
     @ResponseBody
     @Validated
-    int create(@RequestBody PrivilegedConsumer privilegedConsumer) throws JsonProcessingException {
+    public int create(@RequestBody PrivilegedConsumer privilegedConsumer) throws JsonProcessingException {
         return privilegedConsumerService.Create(privilegedConsumer);
     }
 
     @GetMapping ("/privileged/{id}")
     @ResponseBody
     @Validated
-    PrivilegedConsumer get(@PathVariable int id) {
+    public PrivilegedConsumer get(@PathVariable int id) {
         return privilegedConsumerService.getPrivilegedConsumer(id);
     }
 }
