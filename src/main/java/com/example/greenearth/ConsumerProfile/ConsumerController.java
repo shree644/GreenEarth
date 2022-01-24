@@ -21,6 +21,7 @@ public class ConsumerController {
 
     @GetMapping("/consumer/{id}")
     Consumer getConsumer(@PathVariable String id) throws Exception {
+
         return _consumerService.GetConsumer(id);
     }
 
