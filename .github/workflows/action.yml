@@ -32,8 +32,8 @@ jobs:
       - name: "Add remote"
         shell: "bash"
         run: |
-          git pull
-          git push heroku HEAD:main -f
+          git checkout -b master
+          git push heroku HEAD:master -f
 
 
 
